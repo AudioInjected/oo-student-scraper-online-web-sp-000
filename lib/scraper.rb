@@ -11,7 +11,7 @@ class Scraper
       info = {}
       info[:name] = student.css("h4.student-name").text
       info[:location] = student.css("p.student-location").text
-      info[:profile_url] = student.xpath("//div/a/@href")
+      info[:profile_url] = student.xpath("//div/a/@href").text
       array << info
     end
     array
