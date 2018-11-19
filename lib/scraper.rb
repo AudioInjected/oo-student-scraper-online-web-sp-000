@@ -23,7 +23,8 @@ class Scraper
     links = doc.css(".social-icon-container").css("a")
     links.each do |link|
       info = {}
-      link.attributes["href"].value
+      a = link.attributes["href"].value
+      
     end
     binding.pry
   end
