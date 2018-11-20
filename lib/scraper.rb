@@ -37,9 +37,8 @@ class Scraper
       elsif a.include?("flatironschool")
         info[:blog] = a
       end
-      binding.pry
     end
-
+    info
   end
 
 end
