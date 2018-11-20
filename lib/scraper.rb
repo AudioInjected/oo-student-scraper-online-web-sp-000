@@ -23,7 +23,6 @@ class Scraper
     links = doc.css(".social-icon-container").css("a")
     quote = doc.css(".profile-quote").text.strip
     bio = doc.css(".description-holder p").text.strip
-    binding.pry
     info = {}
     info[:bio] = bio
     info[:profile_quote] = quote
