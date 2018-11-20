@@ -6,8 +6,6 @@ class Student
 
   def initialize(student_hash)
     studet_hash.each {|key, value| self.send(("#{key}="), value)}
-
-    binding.pry
   end
 
   def self.create_from_collection(students_array)
