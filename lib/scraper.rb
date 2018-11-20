@@ -25,6 +25,8 @@ class Scraper
     bio = doc.css(".description-holder p").text.strip
     binding.pry
     info = {}
+    info[:bio] = bio
+    info[:profile_quote] = quote
     links.each do |link|
       a = link.attributes["href"].value
       if a.include?("twitter")
