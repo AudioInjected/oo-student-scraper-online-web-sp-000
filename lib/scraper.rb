@@ -34,7 +34,7 @@ class Scraper
         info[:github] = a
       elsif a.include?("linkedin")
         info[:linkedin] = a
-      elsif a.include?("flatironschool")
+      elsif a.include?(doc.css("h1.profile-name").text)
         info[:blog] = a
       end
     end
