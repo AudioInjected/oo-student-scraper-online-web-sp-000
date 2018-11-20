@@ -36,7 +36,6 @@ class Scraper
         info[:linkedin] = a
       elsif a.include?(doc.css("h1.profile-name").text)
         info[:blog] = a
-        binding.pry
       end
     end
     info
